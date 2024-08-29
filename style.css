@@ -21,27 +21,17 @@ header {
   padding: 10px 20px;
   height: 10vh;
 }
-.sec1{
-    position: relative;
+
+
+.navbar a:hover {
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
 }
-.block{
-    position: absolute;
-    top:5%;
-    transform: translate(50%, 50%);
-    height:50vh;
-    width:50vw;
-    background-color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-.navbar a:hover{
-    border-radius: 10px;
-    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-     }
 .logo {
   font-size: 1.3rem;
   font-weight: 800;
@@ -50,8 +40,8 @@ header {
   cursor: pointer;
 }
 
-#check{
-    display: none;
+#check {
+  display: none;
 }
 
 .navbar a {
@@ -70,9 +60,9 @@ header {
 
 .sec1 {
   background-image: url("https://images.unsplash.com/photo-1652585893691-53a14be1cc40?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-background-position:center;
-background-size: cover;
-background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
 }
@@ -96,24 +86,24 @@ background-repeat: no-repeat;
     display: block;
   }
 
-  #check:checked~.icons #menu{
+  #check:checked ~ .icons #menu {
     display: none;
   }
-  #check:checked~.icons #close{
+  #check:checked ~ .icons #close {
     display: block;
   }
 
-  #check:checked~.navbar {
+  #check:checked ~ .navbar {
     height: 25em;
   }
-  #check:checked~.navbar a {
+  #check:checked ~ .navbar a {
     transform: translateY(0);
     transition-delay: calc(0.28s * var(--i));
     opacity: 1;
-    transition: all 0.68s  ease-in;
+    transition: all 0.68s ease-in;
   }
 
-  .icons #close{
+  .icons #close {
     display: none;
   }
 
@@ -132,14 +122,19 @@ background-repeat: no-repeat;
   }
 
   .navbar a {
-    padding:30px ;
+    padding: 30px;
     display: block;
     text-align: center;
     transform: translateY(-80px);
     opacity: 0;
   }
 
-  .navbar a:hover{
- background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  .navbar a:hover {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
   }
 }
